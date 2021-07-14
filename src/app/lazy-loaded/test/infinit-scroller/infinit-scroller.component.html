@@ -1,0 +1,8 @@
+<!-- we use the virtual scroller component from the cdk module we imported -->
+<cdk-virtual-scroll-viewport itemSize="15"
+  ><!-- 15px for each element -->
+  <li *cdkVirtualFor="let item of dataSource">
+    <!-- we cycle trough the dataSource object getting new information if needed -->
+    {{ item }}
+  </li>
+</cdk-virtual-scroll-viewport>
